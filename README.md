@@ -50,6 +50,11 @@ $ $response = $weather->getWeather('深圳');
 
 **获取近期天气预报**
 ```shell
+$response = $weather->getWeather('深圳', 'all');
+```
+
+**示例**
+```shell
 {
     "status": "1", 
     "count": "1", 
