@@ -26,7 +26,7 @@ class Weather
      *
      * @param string $key
      */
-    public function __construct(string $key)
+    public function __construct($key)
     {
         $this->key = $key;
     }
