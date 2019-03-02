@@ -1,4 +1,4 @@
-# Weather
+<h1 align="center">Weather</h1>
 
 基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气信息组件。 
 
@@ -22,7 +22,8 @@ $weather = new Weather($key);
 
 **获取实时天气**
 ```shell
-$ $response = $weather->getWeather('深圳');
+$response = $weather->getWeather('重庆');
+$response = $weather->getLiveWeather('重庆');
 ```
 
 **示例**
@@ -50,7 +51,8 @@ $ $response = $weather->getWeather('深圳');
 
 **获取近期天气预报**
 ```shell
-$response = $weather->getWeather('深圳', 'all');
+$response = $weather->getWeather('重庆', 'all');
+$response = $weather->getForecastsWeather('重庆');
 ```
 
 **示例**
